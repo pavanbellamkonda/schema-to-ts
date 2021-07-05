@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/pavanbellamkonda/schema-to-ts/issues"
   },
-  "homepage": "https://github.com/pavanbellamkonda/schema-to-ts#readme"
+  "homepage": "https://github.com/pavanbellamkonda/schema-to-ts#readme",
+  "devDependencies": {
+    "@types/node": "~14.17.4"
+  },
+  "dependencies": {
+    "typescript": "~4.3.5"
+  }
 }
