@@ -1,0 +1,20 @@
+{
+  "name": "schema-to-ts",
+  "version": "0.0.0",
+  "description": "Generates Typescript type-definitions from schema loosely based on https://json-schema.org/",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavanbellamkonda/schema-to-ts.git"
+  },
+  "keywords": [
+    "ts"
+  ],
+  "author": "Pavan Bellamkonda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pavanbellamkonda/schema-to-ts/issues"
+  },
+  "homepage": "https://github.com/pavanbellamkonda/schema-to-ts#readme"
+}
