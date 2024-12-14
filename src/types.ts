@@ -36,8 +36,8 @@ export interface ObjSchema extends BaseSchema {
 
 export interface NumberSchema extends BaseSchema {
   type: 'number';
-  default?: number | string | null;
-  enum?: (number | string)[];
+  default?: number | null;
+  enum?: number[];
 }
 
 export interface BooleanSchema extends BaseSchema {
@@ -60,5 +60,17 @@ export interface ArraySchema extends BaseSchema {
 export interface TsOptions {
   scriptTarget?: ts.ScriptTarget;
   objectInterfaceNameHandler?: (name: string) => string;
-  // newLineKind?: 
+}
+
+export type TypeNode = ts.InterfaceDeclaration | ts.TypeAliasDeclaration;
+
+export interface IndividualType {
+  typeNode: TypeNode;
+  name: ts.Identifier;
+  text: string;
+}
+
+export interface GenerateResult {
+  fullText: string;
+  individualTypes: IndividualType[];
 }
